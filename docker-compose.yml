@@ -1,0 +1,28 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: my_postgres
+    environment:
+      - POSTGRES_USER=${DB_USERNAME}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=${DB_NAME}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  # Uncomment and configure the following block if you want to run your Node.js app in a container
+  # node_app:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #   container_name: my_node_app
+  #   environment:
+  #     DATABASE_URL: postgres://yourusername:yourpassword@postgres:5432/yourdatabase
+  #   ports:
+  #     - "3000:3000"
+  #   depends_on:
+  #     - postgres
+
+volumes:
+  postgres_data:
