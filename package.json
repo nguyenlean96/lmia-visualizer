@@ -19,11 +19,11 @@
 	},
 	"scripts": {
 		"compile": "tsc",
-		"build": "npm run compile",
+		"build": "cd client && npm install && cd .. && npm run compile",
 		"client-build": "cd client && npm install && npm run build",
-		"start": "concurrently \"npm run compile\" \"node ./dist/server.js\" \"cd client\" \"npm start\"",
-		"client": "cd client && npm start",
-		"server": "node ./dist/server.js",
+		"start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node ./dist/server.js",
+    "client": "node start-client.js",
 		"dev": "concurrently \"nodemon ./dist/server.js\" \"npm run client\"",
 		"lint": "eslint ."
 	},
