@@ -100,7 +100,7 @@ git commit -m 'Adding `build` to source control'
 **3. Create the Heroku app**
 
 ```
-heroku apps:create food-lookup-demo
+heroku apps:create lmia-visualizer
 ```
 
 **4. Push to Heroku**
