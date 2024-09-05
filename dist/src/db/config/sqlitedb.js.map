@@ -1,1 +1,0 @@
-{"version":3,"file":"sqlitedb.js","sourceRoot":"","sources":["../../../../src/db/config/sqlitedb.ts"],"names":[],"mappings":";;AAAA,yCAAsC;AAEtC,MAAM,gBAAgB,GAAG,IAAI,qBAAS,CAAC;IACrC,OAAO,EAAE,QAAQ;IACjB,OAAO,EAAE,kBAAkB;IAC3B,OAAO,EAAE,KAAK;IACd,IAAI,EAAE;QACJ,GAAG,EAAE,CAAC;QACN,IAAI,EAAE,KAAK;KACZ;CACF,CAAC,CAAC;AAEH,kBAAe,gBAAgB,CAAC"}
