@@ -19,6 +19,7 @@
 	},
 	"scripts": {
 		"compile": "tsc",
+		"build": "npm run compile",
 		"start": "concurrently \"npm run compile\" \"node ./dist/server.js\" \"cd client\" \"npm start\"",
 		"client": "cd client && npm start",
 		"server": "concurrently \"nodemon ./dist/server.js\" \"cd client\" \"npm start\"",
