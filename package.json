@@ -22,7 +22,7 @@
 		"build": "cd client && npm install && npm run build && cd .. && npm run compile",
 		"start": "concurrently \"npm run compile\" \"node ./dist/server.js\" \"cd client\" \"npm start\"",
 		"client": "cd client && npm start",
-		"server": "node ./dist/server.js",
+		"server": "node ./dist/server.js && cd client && npm start",
 		"dev": "concurrently \"nodemon ./dist/server.js\" \"npm run client\"",
 		"lint": "eslint ."
 	},
